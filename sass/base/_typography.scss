@@ -1,0 +1,40 @@
+%heading {
+  font-family: var(--font-display);
+  font-weight: 400;
+}
+
+.heading-1 {
+  @extend %heading;
+  font-size: 4.5rem;
+  color: var(--color-grey-light-1);
+  line-height: 1;
+  font-weight: 700;
+
+  span {
+    font-style: italic;
+    color: var(--color-primary);
+  }
+}
+.heading-2 {
+  @extend %heading;
+  font-size: 4.2rem;
+}
+.heading-3 {
+  @extend %heading;
+  font-size: 1.6rem;
+  color: var(--color-black);
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.heading-4 {
+  @extend %heading;
+
+  font-size: 1.9rem;
+}
+.heading--light {
+  color: var(--color-primary);
+}
+
+.heading--dark {
+  color: var(--color-grey-dark-1);
+}

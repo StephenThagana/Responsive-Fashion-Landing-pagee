@@ -1,0 +1,42 @@
+.section-testimonials {
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    [col-start] minmax(min-content, 1fr) [col-end]
+  );
+}
+.testimonial {
+  position: relative;
+
+  &__img {
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  &__review {
+    position: absolute;
+    background-color: #fff;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(25%, 15%);
+    padding: 1.2rem 2.4rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+  }
+  &__content {
+    padding: 4rem 8vw;
+    grid-column: col-start 2 / col-end 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+  }
+}

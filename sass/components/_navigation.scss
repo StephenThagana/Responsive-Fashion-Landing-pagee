@@ -1,0 +1,40 @@
+.main__nav {
+  &-list {
+    list-style: none;
+    display: flex;
+    gap: 3.2rem;
+  }
+
+  &-item {
+    position: relative;
+  }
+  &-item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-primary);
+    transform: scaleX(0);
+    transition: transform 0.2s 0.2s;
+  }
+
+  &-item:hover::before {
+    transform: scaleX(1);
+  }
+
+  &-link:link,
+  &-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+  }
+  &-link:hover,
+  &-link:active {
+    color: var(--color-primary);
+  }
+}

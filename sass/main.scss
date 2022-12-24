@@ -1,0 +1,22 @@
+// abstracts files
+@import "abstracts/variables";
+
+// base files
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+// components files
+@import "components/button";
+@import "components/featured";
+@import "components/design";
+@import "components/gallery";
+@import "components/header";
+@import "components/navigation";
+@import "components/pricing";
+@import "components/subscribe";
+@import "components/testimonials";
+@import "components/updates";
+
+// layout files
+@import "layout/footer";

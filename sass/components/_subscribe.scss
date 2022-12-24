@@ -1,0 +1,63 @@
+.section-subscribe {
+  // background-image: url(../img/ribbon1.jpg);
+  // background-size: cover;
+  grid-column: full-start / full-end;
+}
+.subscribe__form {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  // background-color: var(--color-primary);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-grey-light-1),
+    var(--color-grey-light-2)
+  );
+
+  border-radius: 11px;
+  overflow: hidden;
+
+  & .heading-2 {
+    margin-bottom: 2rem;
+  }
+  &-text {
+    padding: 4.8rem;
+  }
+  &-img {
+    background-image: url(../img/clothefold.jpg);
+    background-size: cover;
+    background-position: top;
+  }
+}
+.signup {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.2rem;
+}
+
+.signup .email label {
+  font-size: 1.6rem;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+.signup .email input {
+  font-size: 1.8rem;
+  padding: 1.2rem;
+  width: 100%;
+  border-radius: 9px;
+  font-family: inherit;
+  border: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.signup .email input::placeholder {
+  color: #aaa;
+}
+.signup div {
+  font-size: 1.8rem;
+  padding: 1.2rem;
+}
+.signup a {
+  justify-self: center;
+  text-align: center;
+}

@@ -1,0 +1,25 @@
+.section-pricing {
+  background-image: url(../img/happy3.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-column: full-start / full-end;
+  margin: 15rem 0;
+  padding: 4.8rem 9.6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 7rem;
+  // height: 80vh;
+}
+.pricing {
+  background-color: red;
+
+  img {
+    height: 40%;
+  }
+
+  &__icon {
+    fill: var(--color-primary);
+    height: 2rem;
+    width: 2rem;
+  }
+}

@@ -1,0 +1,39 @@
+// BASIC RESET
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 10px/16px *  100%
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-primary);
+  color: var(--color-grey-dark-2);
+  font-weight: 300;
+  line-height: 1.6;
+}
+.grid {
+  display: grid;
+  // grid-template-rows:
+  //   80vh 80vw repeat(2, min-content) 40vw
+  //   repeat(4, min-content);
+  grid-template-columns:
+    [full-start] minmax(3rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 14rem) [col-end]
+    )
+    [center-end] minmax(3rem, 1fr) [full-end];
+}
+.container {
+  max-width: 112rem;
+  margin: 0 auto;
+}
+section {
+  margin-bottom: 9.6rem;
+}
